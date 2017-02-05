@@ -1,0 +1,77 @@
+/* Styles of buttons */
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: block;
+  margin: 15px auto;
+  max-width:200px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-2a {
+  border-radius: 0 0 5px 5px;
+}
+
+/* Colors */
+
+.red {
+  background: #cb4e4e;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 6px #ab3c3c;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.blue {
+  background: #4593e3;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 6px #226fbe;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.green {
+  background: #2ecc71;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 6px #24b662;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.yellow {
+  background: yellow;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 6px #24b662;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}

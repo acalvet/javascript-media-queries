@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <Title></title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery.1.8.0.min.js"></script>
+    <script type="text/javascript" src="../dist/media.queries.js"></script>
+
+    <script type="text/javascript">
+      $( document ).ready(function() {
+
+        function btnBlue(){
+          $('#boton').addClass('blue');
+        }
+
+        function btnGreen(){
+          $('#boton').addClass('green');
+        }
+
+        function btnYellow(){
+          $('#boton').addClass('yellow');
+        }
+
+        function btnReset(){
+          $('#boton').removeClass('blue'); 
+          $('#boton').removeClass('green');
+          $('#boton').removeClass('yellow');
+        }
+
+        mediaQueries.define({ 'range' : [960, 767] });
+
+        mediaQueries.define({ 'range' : [600, 400] });
+
+        mediaQueries.define({ 'range' : [670, 400] });
+
+        jQuery(document).on("event_960_767", btnBlue);
+
+        jQuery(document).on("reset_960_767", btnReset);
+
+        jQuery(document).on("event_600_400", btnYellow);
+
+        jQuery(document).on("reset_600_400", btnReset);
+
+        jQuery(document).on("event_670_400", btnGreen);
+
+        jQuery(document).on("reset_670_400", btnReset);
+
+        mediaQueries.execute(jQuery(window).width(), jQuery(window).height());  // Lanzar los eventos la primera vez  */
+
+      });
+    </script>
+
+</head>
+<body>
+    <a id="boton" class="btn btn-2 btn-2a red" href="" onclick=" "> BOTON DE PRUEBA </a>
+    <a id="boton1" class="btn btn-2 btn-2a blue" href=""> BOTON DE PRUEBA </a>
+</body>
+</html>
